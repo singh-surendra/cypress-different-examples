@@ -24,7 +24,7 @@ describe('Category page tests', ()=>{
         cy.get('[data-displayname="Brand"] > .filter-content > .filter-inner > :nth-child(n) input')
         .should('have.checked','checked')
 
-         //check the checkboxes and verify them
+         //uncheck the checkboxes and verify them
          cy.get('[data-displayname="Brand"] > .filter-content > .filter-inner > :nth-child(n) input').
          uncheck({force:true})
          cy.get('[data-displayname="Brand"] > .filter-content > .filter-inner > :nth-child(n) input')
