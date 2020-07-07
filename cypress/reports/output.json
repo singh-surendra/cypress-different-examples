@@ -1,0 +1,319 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-07T19:32:24.761Z",
+    "end": "2020-07-07T19:32:24.761Z",
+    "duration": 40220,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0bc956dd-eec4-4a5d-bdd6-8ed289c714b4",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/amazon_search_within_test.js",
+      "file": "cypress/integration/sampletests/amazon_search_within_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26668e84-ff56-4f2e-b641-7ef0da4c628f",
+          "title": "amazon search app",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "search test",
+              "fullTitle": "amazon search app search test",
+              "timedOut": null,
+              "duration": 3475,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.in/');\ncy.get('.nav-search-field ').within(function () {\n  cy.get('#twotabsearchtextbox').type('Apple Mac Book laptop');\n});",
+              "err": {},
+              "uuid": "2125ca88-2dc5-44e7-a755-fa3e34c30d1d",
+              "parentUUID": "26668e84-ff56-4f2e-b641-7ef0da4c628f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2125ca88-2dc5-44e7-a755-fa3e34c30d1d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3475,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "502df834-9689-4d24-a448-f53b3b52f1b1",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/automationPractice_test.js",
+      "file": "cypress/integration/sampletests/automationPractice_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6d08335b-7f41-4e7b-b0df-b969c85aeaea",
+          "title": "automation practice features testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login",
+              "fullTitle": "automation practice features testing should login",
+              "timedOut": null,
+              "duration": 9413,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'controller=my-account');\ncy.get('.myaccount-link-list a').should('have.length', 5);",
+              "err": {},
+              "uuid": "c2a8259c-e452-46d5-a0e1-81f9285bb917",
+              "parentUUID": "6d08335b-7f41-4e7b-b0df-b969c85aeaea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should navigate to home page",
+              "fullTitle": "automation practice features testing should navigate to home page",
+              "timedOut": null,
+              "duration": 1814,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.icon-chevron-left').last().click().url().should('include', 'index.php');",
+              "err": {},
+              "uuid": "d5f6fb7c-2aa0-4928-b3cf-a13215e79205",
+              "parentUUID": "6d08335b-7f41-4e7b-b0df-b969c85aeaea",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should search",
+              "fullTitle": "automation practice features testing should search",
+              "timedOut": null,
+              "duration": 1825,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.search('Dress');\ncy.get('.lighter').should('contain.text', 'Dress');",
+              "err": {},
+              "uuid": "36f42b6e-81c7-47b5-954d-4011c6bca40c",
+              "parentUUID": "6d08335b-7f41-4e7b-b0df-b969c85aeaea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c2a8259c-e452-46d5-a0e1-81f9285bb917",
+            "d5f6fb7c-2aa0-4928-b3cf-a13215e79205",
+            "36f42b6e-81c7-47b5-954d-4011c6bca40c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13052,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "868b5037-5429-45f5-87c2-3dbe2f8d5284",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/back_fwd_test.js",
+      "file": "cypress/integration/sampletests/back_fwd_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8e4618cd-71d2-4014-95b1-1b96279193da",
+          "title": "back and fwd button simulate",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "back-fwd test",
+              "fullTitle": "back and fwd button simulate back-fwd test",
+              "timedOut": null,
+              "duration": 13688,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.freshworks.com/');\ncy.contains('Platform').click();\ncy.go('back', {\n  timeout: 5000\n}); // cy.go(-1)\ncy.wait(200);\ncy.go('forward'); //cy.go(1)",
+              "err": {},
+              "uuid": "11d358ca-2af8-4c03-ba8c-8f3935626fd5",
+              "parentUUID": "8e4618cd-71d2-4014-95b1-1b96279193da",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "11d358ca-2af8-4c03-ba8c-8f3935626fd5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13688,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "dd5d4723-4188-4edb-9af7-7a9fc3d9aaae",
+      "title": "",
+      "fullFile": "cypress/integration/sampletests/checkbox_test.js",
+      "file": "cypress/integration/sampletests/checkbox_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5bc411e0-076a-4ac5-a545-fca75ca6a01e",
+          "title": "Category page tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "SnapDeal page - filter checkbox test",
+              "fullTitle": "Category page tests SnapDeal page - filter checkbox test",
+              "timedOut": null,
+              "duration": 10005,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.snapdeal.com/');\ncy.get('#inputValEnter').type('Laptop');\ncy.contains('Search').click(); //check the checkboxes and verify them\ncy.get('[data-displayname=\"Brand\"] > .filter-content > .filter-inner > :nth-child(n) input').check({\n  force: true\n});\ncy.get('[data-displayname=\"Brand\"] > .filter-content > .filter-inner > :nth-child(n) input').should('have.checked', 'checked'); //uncheck the checkboxes and verify them\ncy.get('[data-displayname=\"Brand\"] > .filter-content > .filter-inner > :nth-child(n) input').uncheck({\n  force: true\n});\ncy.get('[data-displayname=\"Brand\"] > .filter-content > .filter-inner > :nth-child(n) input').should('not.have.checked', 'checked');",
+              "err": {},
+              "uuid": "3a031042-1b40-41ee-b32b-3cb1c325e080",
+              "parentUUID": "5bc411e0-076a-4ac5-a545-fca75ca6a01e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3a031042-1b40-41ee-b32b-3cb1c325e080"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10005,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
